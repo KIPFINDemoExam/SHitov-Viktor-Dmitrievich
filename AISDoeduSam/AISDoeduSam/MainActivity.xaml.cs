@@ -16,18 +16,18 @@ using System.Windows.Shapes;
 namespace AISDoeduSam
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainActivity.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainActivity : Page
     {
-        public MainWindow()
+        public MainActivity()
         {
             InitializeComponent();
         }
 
-        private void Window_Initialized(object sender, EventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new MainActivity());
+
         }
     }
 }

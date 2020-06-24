@@ -16,18 +16,15 @@ using System.Windows.Shapes;
 namespace AISDoeduSam
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Item.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Item : UserControl
     {
-        public MainWindow()
+        public Item(char name, char price)
         {
             InitializeComponent();
-        }
-
-        private void Window_Initialized(object sender, EventArgs e)
-        {
-            MainFrame.Navigate(new MainActivity());
+            textLabel.Content = name;
+            priceLabel.Content = name;
         }
     }
 }

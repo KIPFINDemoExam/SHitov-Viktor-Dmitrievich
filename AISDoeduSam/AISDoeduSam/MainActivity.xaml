@@ -1,0 +1,16 @@
+﻿<Page x:Class="AISDoeduSam.MainActivity"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AISDoeduSam"
+      mc:Ignorable="d" 
+      d:DesignHeight="850" d:DesignWidth="1000"
+      Title="MainActivity">
+
+    <Grid>
+        <WrapPanel x:Name="MainPanel" Margin="10,10,10,70"/>
+        <Button Content="Выбрать" Margin="0,0,10,10" Click="Button_Click" FontFamily="Tw Cen MT" FontSize="14" HorizontalAlignment="Right" Width="100" Height="40" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Page>
