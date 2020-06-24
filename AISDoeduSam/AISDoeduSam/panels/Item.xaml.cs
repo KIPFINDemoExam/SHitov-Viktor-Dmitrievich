@@ -20,11 +20,16 @@ namespace AISDoeduSam
     /// </summary>
     public partial class Item : UserControl
     {
-        public Item(char name, char price)
+        public Item(string name = "name", string price = "price")
         {
             InitializeComponent();
             textLabel.Content = name;
-            priceLabel.Content = name;
+            priceLabel.Content = price;
+        }
+
+        private void ItemGrid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+           
         }
     }
 }

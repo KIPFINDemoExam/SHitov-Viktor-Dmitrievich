@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AISDoeduSam.model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,16 @@ namespace AISDoeduSam
         public MainActivity()
         {
             InitializeComponent();
+            var context = new DBDoeduSamEntities();
+            foreach (product prod in context.product)
+            {
+                MainPanel.Children.Add(new Item(prod.Name, Convert.ToString(prod.Price)));
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

@@ -9,8 +9,8 @@
       Title="MainActivity">
 
     <Grid>
-        <WrapPanel x:Name="MainPanel" Margin="10,10,10,70"/>
-        <Button Content="Выбрать" Margin="0,0,10,10" Click="Button_Click" FontFamily="Tw Cen MT" FontSize="14" HorizontalAlignment="Right" Width="100" Height="40" VerticalAlignment="Bottom"/>
-
+        <ScrollViewer Margin="2,2,2,70">
+            <WrapPanel x:Name="MainPanel" Margin="10,10,20,70" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Visible" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" Grid.IsSharedSizeScope="True" OverridesDefaultStyle="True"/>
+        </ScrollViewer>
     </Grid>
 </Page>
